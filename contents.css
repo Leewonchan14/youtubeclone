@@ -1,0 +1,109 @@
+:root {
+    --tags-height: 60px;
+}
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    height: 100%;
+
+    padding: 0 30px 0 30px;
+}
+
+.tags {
+    display: flex;
+    box-sizing: border-box;
+    height: var(--tags-height);
+    width: 100%;
+    gap: 10px;
+
+    margin: 10px 0;
+}
+
+.tag-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0px 14px;
+
+    border-radius: 10px;
+    background: #ebebeb;
+    font-size: 14px;
+}
+
+.content-body {
+    box-sizing: border-box;
+    display: flex;
+    flex: 1;
+    height: 300px;
+    width: 100%;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    
+    padding: 0 0 30px 0;
+
+    overflow-y: scroll;
+}
+
+.movie-card {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+    height: auto;
+}
+
+.movie-card-image-container {
+    width: 100%;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.content-img {
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.movie-card-descipte-section {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+}
+
+.movie-card-channel {
+    height: 50px;
+    width: 50px;
+}
+
+.descipte-title-view-day {
+    margin: 0 0 0 5px;
+}
+
+.descipte-title-view-day .title {
+    margin: 0;
+    padding: 5px 0 0 0;
+    font-weight: bold;
+}
+
+.descipte-title-view-day .view {
+    color: gray;
+    margin: 0 0 5px 0;
+}
+
+.descipte-title-view-day .day {
+    margin: 0;
+    color: gray;
+}
